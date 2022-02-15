@@ -33,12 +33,8 @@ function addElement(tag, classTag, text){
 }
 function randomColor() {
     let r = Math.floor(Math.random() * 255);
-    console.log(r);
     let g = Math.floor(Math.random() * 255);
-    console.log(g);
     let b = Math.floor(Math.random() * 255);
-    console.log(b);
-    console.log('#' + hex(r) + hex(g) + hex(b));
     return '#' + hex(r) + hex(g) + hex(b);
 }
 function hex(number){
@@ -58,7 +54,3 @@ for (let i = 0; i < listArr.length; i++){
     newElem.appendChild(itemTitle);
     newElem.appendChild(itemDescription);
 }
-
-/*Создайте ul через createElement, затем вставьте каждый элемент этого массива в отдельную li  (то есть создать еще 2 элемента для свойства title и ы свойства text). Поместить все созданные li внутри этой ul, затем вставьте эту ul в конец body.
-
-Дополнительно сделать функцию которая будет возвращать рандомный цвет, и для каждого li применить этот рандомный цвет текста. (Это все сделать с помощью js)*/
